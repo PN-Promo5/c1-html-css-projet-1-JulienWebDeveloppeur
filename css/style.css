@@ -428,6 +428,7 @@ height: 60%;
 }
 #how .row {
   width: 100%;
+  height: 100%;
 }
 /*----End Animation---------*/
 /*----END Header rules---------*/
@@ -666,7 +667,7 @@ font-weight: 400;
 margin: 5px;
 }
 .footer-bottom li:hover a{
-color:#431B0F;
+color:#631B0F;
 }
 /*----Contact---------*/
 #name,#email {
