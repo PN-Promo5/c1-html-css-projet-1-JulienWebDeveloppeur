@@ -53,11 +53,25 @@ flex-direction: column-reverse;
   display: flex;
   flex-direction: column;
 }
-.tongue {
-  width: 60px;
+#avantages .column {
+  width: 100%;
+  flex:none;
 }
-.heart{
-    width: 60px;
+#avantages .product-details.row {
+  flex-direction: column;
+}
+#avantages .product-details {
+padding: 0px;
+}
+#avantages .img-avantages {
+  display: flex;
+  justify-content: center;
+}
+#avantages .product-details .img-avantages{
+padding: 0px;
+}
+.title-30,.text-avantages {
+  text-align: center;
 }
 .big-img {
 	display: none;
@@ -97,10 +111,7 @@ justify-content: center;
 #concept .left-section {
 	display: none;
 }
-#avantages .column {
-  width: 100%;
-  flex:none;
-}
+
 .big-img {
 	display: none;
 }
