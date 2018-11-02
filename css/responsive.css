@@ -57,6 +57,7 @@ flex-direction: column;
 }
 #contact .row.label-area {
 flex-direction: row;
+flex-wrap: wrap;
 }
 .footer-bottom {
 display: flex;
