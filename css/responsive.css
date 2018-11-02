@@ -46,6 +46,19 @@ flex-direction: column;
 #concept .row {
 flex-direction: column-reverse;
 }
+#avantages .column {
+  flex:none;
+}
+#avantages .container>.row {
+  display: flex;
+  flex-direction: column;
+}
+.tongue {
+  width: 60px;
+}
+.heart{
+    width: 60px;
+}
 .big-img {
 	display: none;
 }
@@ -87,10 +100,6 @@ justify-content: center;
 #avantages .column {
   width: 100%;
   flex:none;
-}
-#avantages .container>.row {
-  display: flex;
-  flex-direction: column;
 }
 .big-img {
 	display: none;

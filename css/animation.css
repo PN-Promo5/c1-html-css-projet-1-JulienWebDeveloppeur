@@ -17,12 +17,14 @@
 }    
 .tongue {
   animation: 1s tongue infinite linear;
+  width: 80px;
 }
 .tongue:hover {
  animation-play-state: paused;
 }
 .heart{
   animation: 2s infinite beatHeart;
+    width: 80px;
 }
 .heart:hover {
  animation-play-state: paused;
