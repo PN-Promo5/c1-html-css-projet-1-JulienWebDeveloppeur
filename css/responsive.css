@@ -85,6 +85,7 @@ justify-content: center;
 }
 #avantages .column {
   width: 100%;
+  flex:none;
 }
 #avantages .container>.row {
   display: flex;
