@@ -93,9 +93,6 @@ width: 100%;
 .row {
   display: flex;
 }
-#how .row {
-  width: 100%;
-}
 .column {
   display: flex;
   flex-direction: column;
@@ -221,7 +218,20 @@ margin: 5px;
 font-size: 15px;
 }
 /*------END Btn------*/
-/*------NavBar------*/
+
+/*------Banner------*/
+#banner {
+  background-color: #F9A891;
+  position: fixed;
+  width: 100%;
+ top:0;
+ z-index: 1;
+}
+#banner .container {
+padding: 5px;
+}
+/*------End banner------*/
+/*----NavBar---------*/
 .nav-bar {
 background-color: #fff;
 position: fixed;
@@ -320,8 +330,8 @@ display: flex;
   top: -7px;
   left: -5px; 
   cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0; 
+  z-index: 2; 
   -webkit-touch-callout: none;
 }
 #menuToggle span
@@ -406,16 +416,35 @@ text-align: center;
 padding: 20px;
 height: 60%;
 }
-/*----END Header rules---------*/
-#banner {
-  background-color: #F9A891;
-  position: fixed;
-  width: 100%;
- top:0;
- z-index: 1;
+/*----Animation---------*/
+#how .product-details {
+  padding: 0px 20px;
+  justify-content: center;
+  height: 100%;
+  box-shadow: none;
 }
-#banner .container {
-padding: 5px;
+#how  {
+  height: 40%;
+}
+#how .row {
+  width: 100%;
+}
+/*----End Animation---------*/
+/*----END Header rules---------*/
+
+/*----Best sell---------*/
+.product-details {
+border-radius: 10px;
+border-top-left-radius: 0px;
+box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+padding-bottom: 5px;
+flex: 1;
+margin:5px;
+padding: 10px 10px;
+}
+.product-details:hover {
+  transition: box-shadow 0.1s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .produit img{
 width: 200px;
@@ -451,15 +480,6 @@ a:hover .coeur-vide {
 a:hover .coeur-plein {
 	display: inline;
 }
-.product-details {
-border-radius: 10px;
-border-top-left-radius: 0px;
-box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
-padding-bottom: 5px;
-flex: 1;
-margin:5px;
-padding: 10px 10px;
-}
 #best-sell .product-details img:hover{
 transition: ease 0.3s;
 transform:translateY(-10px);
@@ -484,25 +504,15 @@ margin-bottom: 10px;
 padding: 10px 0px;
 }
 .information {
-font-size: 15px;
+font-size: 17px;
 text-align: center;
 letter-spacing: 1px;
 font-style: italic;
-height: 70px;
+height: 80px;
 }
-.product-details:hover {
-  transition: box-shadow 0.1s;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-#how .product-details {
-  padding: 0px 20px;
-  justify-content: center;
-  height: 100%;
-  box-shadow: none;
-}
-#how  {
-  height: 40%;
-}
+/*----End best sell---------*/
+
+/*----Concept---------*/
 #concept {
   padding: 20px 0px;
 }
@@ -517,6 +527,9 @@ padding: 20px 0px;
     text-align: center;
     padding: 0px 20px;
 }
+/*----End Concept---------*/
+
+/*----Avantages---------*/
 #avantages {
   padding: 20px
 }
@@ -526,15 +539,21 @@ padding: 20px 0px;
   flex:1;
 }
 #avantages .column {
-  width: 50%;
   height: 50%;
+  flex:1;
+}
+#avantages .container>.row {
+  justify-content: center;
 }
 #avantages .product-details .img-avantages{
 padding: 20px;
 }
 #avantages .product-details .avantages-desc{
-width: 50%;
+text-align: justify;
 }
+/*----End avantages---------*/
+
+/*----Social network---------*/
 #social-network {
   height: 60vh;
 }
@@ -615,6 +634,10 @@ background-position: center;
 width: 40%;
 height: 60vh;
 }
+/*----End social network---------*/
+
+/*----Footer---------*/
+
 #footer {
   background-image: url('../img/bg-footer.jpg');
 background-position: center;
@@ -642,6 +665,7 @@ width: 100%;
 font-weight: 400;
 margin: 5px;
 }
+/*----Contact---------*/
 #name,#email {
   margin: 0px 20px;
 }
@@ -671,9 +695,14 @@ textarea {
 .social-media li {
   font-size: 20px;
 }
+.social-media li:hover i{
+color: #431B0F;
+}
 .social-media a {
   color: white;
 }
+/*----End contact---------*/
+/*----End Footer---------*/
 .top {
   z-index: 2;
   position: fixed;

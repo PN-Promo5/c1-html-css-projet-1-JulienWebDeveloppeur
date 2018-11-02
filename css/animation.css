@@ -69,6 +69,7 @@ opacity: 0;
   animation-timing-function: linear;
   animation-delay: 11s;
   animation-duration: 2s;
+  width: 50px;
 }
 .chef{
   animation-name:invisible;
@@ -82,10 +83,12 @@ opacity: 0;
   animation-delay:13s;
   animation-duration: 20s;
   animation-timing-function: ease-out;
+  margin-bottom: 30px;
 }
 .bowl{
   animation: 15s bowl;
   animation-delay:12s;
+    margin-bottom: 30px;
 }
 .down {
   animation-name: down;
@@ -321,10 +324,10 @@ header .align-center .down{
   width: 50px;
   height: 50px;
   background-color: transparent;
-  margin-top: 1em;
+  margin-top: 2vh;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0;
+  opacity: 1;
   animation-name: fire;
   animation-duration: 5s;
   animation-delay: 13s;
