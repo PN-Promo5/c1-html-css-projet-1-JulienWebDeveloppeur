@@ -665,6 +665,9 @@ width: 100%;
 font-weight: 400;
 margin: 5px;
 }
+.footer-bottom li:hover a{
+color:#431B0F;
+}
 /*----Contact---------*/
 #name,#email {
   margin: 0px 20px;
