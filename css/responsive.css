@@ -46,9 +46,6 @@ flex-direction: column;
 #concept .row {
 flex-direction: column-reverse;
 }
-#avantages .column {
-  flex:none;
-}
 #avantages .container>.row {
   display: flex;
   flex-direction: column;
@@ -56,12 +53,10 @@ flex-direction: column-reverse;
 #avantages .column {
   width: 100%;
   flex:none;
+  height: 40%;
 }
 #avantages .product-details.row {
   flex-direction: column;
-}
-#avantages .product-details {
-padding: 0px;
 }
 #avantages .img-avantages {
   display: flex;
@@ -111,7 +106,10 @@ justify-content: center;
 #concept .left-section {
 	display: none;
 }
-
+#avantages .column {
+  flex:none;
+  height: 60%;
+}
 .big-img {
 	display: none;
 }
