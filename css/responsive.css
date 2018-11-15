@@ -4,8 +4,21 @@
 flex-direction: column;
 padding: 20px 10px;
 }
+.btn-banner {
+  font-size: 15px;
+}
+#banner .bold{
+font-size: 20px;
+}
+.nav-bar {
+  top:40px;
+}
+#menuToggle {
+  top:55px;
+}
 .header {
   justify-content: center;
+  margin-top: 70px;
 }
 .header-content {
   height: 100%;
@@ -25,18 +38,10 @@ padding: 20px 10px;
 #menuToggle {
 	display: block;
 }
-.nav-bar li.accueil,.nav-bar li.boutique,.nav-bar li.concept,.nav-bar li.blog,.nav-bar li.panier {
+.nav-bar li.accueil,.nav-bar li.boutique,.nav-bar li.concept,.nav-bar li.blog {
   display: none;
 }
-.nav-bar ul {
-  flex-direction: row-reverse;
-}
-.nav-bar ul {
-  padding-right: 0px;
-}
-.nav-bar ul {
-  padding-right: 20px;
-}
+
 .concept-container {
 flex-direction: column;
 }
@@ -84,12 +89,52 @@ flex-wrap: wrap;
 .footer-bottom {
 display: flex;
 }
+#header-panier .row.panier1 {
+flex-direction: column;
+}
+
 }
 /*----Mobile---------*/
 @media only screen and (max-width:600px) {
 .details-produit {
 display: flex;
 flex-direction: column;
+}
+#banner {
+ height: 50px;
+}
+#banner .title-20{
+font-size: 15px;
+}
+#banner .bold{
+font-size: 18px;
+}
+.nav-bar {
+  top:50px;
+}
+#menuToggle {
+  top:65px;
+}
+.btn-banner {
+  font-size: 10px;
+}
+#header-panier .produit{
+display: none;
+}
+#article1,#article2,#article3 {
+  height: 100px;
+}
+.article-title .text-choco,.quantites-title .text-choco,.prices-title .text-choco,.remove-title .text-choco{
+font-size: 20px;
+}
+#article1 .title-20,#article2 .title-20,#article3 .title-20 {
+  font-size:15px;
+}
+.article {
+width: 10vw;
+}
+.row.quantites {
+  flex-direction: column-reverse;
 }
 header .wait {
   top:60vh;
@@ -123,4 +168,8 @@ padding-left: 15px;
 .logo-footer {
   display: none;
 }
+#header-panier .row.panier1 {
+flex-direction: column;
+}
+
 }

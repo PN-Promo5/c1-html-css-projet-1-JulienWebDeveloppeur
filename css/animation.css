@@ -1,7 +1,3 @@
-@keyframes underline{
-  from {transform :rotateY(0deg);}
-  to {transform :rotateY(360deg);}
-}
 .grasshopper2{
   transform-origin: 50% 50%;
   animation: jump 300ms linear alternate infinite;
@@ -258,7 +254,7 @@ header .wait {
   animation-delay: 0s;
   animation-iteration-count: 16;
   position: absolute; 
-  top:60vh;
+  top:55vh;
   height: 100;
   left: 10% ;
   right: 10% ;

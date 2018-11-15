@@ -14,19 +14,22 @@
 	</head>
 	<body>
 		<!-- Banner-->
-		<section id="banner">
-			<div class="container align-center">
-				<a href="#" class="btn-banner text-white"><span class="title-20 bold">Livraison gratuite à partir de 20€</span><br> en savoir plus..</a>
+		<section id="banner" class="column content-center">
+			<div class="text-center">
+				<span id="nutri-20" class="title-20 text-white">
+20% sur votre commande à partir de 35 euros	avec le code : <a href="#best-sell" class="btn-banner text-white title-20"><span class="bold">NUTRI20</span></a></span>
+				<span id="nutri-30" class="title-20 text-white">
+30% sur votre commande à partir de 75 euros	avec le code : <a href="#best-sell" class="btn-banner text-white title-20"><span class="bold">NUTRI30</span></a></span>
 			</div>
 		</section>
 		<!-- Nav desktop-->
 		<nav class="nav-bar">
 			<ul class="row">
-				<a href="#"><li class="accueil"><i class="fas fa-home"></i></li></a>
+				<a href="#"><li class="accueil" id="home-back"><i class="fas fa-home"></i></li></a>
 				<a href="#"><li class="boutique">Boutique</li></a>
-				<a href="#"><li class="logo"><img src="img/logo.svg"></li></a>
+				<a href="#"><li class="logo" id="logo-back"><img src="img/logo.svg"></li></a>
 				<a href="#concept"><li class="concept">A propos</li></a>
-				<a href="#" class="btn-panier"><li class="panier"><span class="panier"><i class="fas fa-shopping-cart"></i></span>Panier</li></a>
+				<a href="#" class="btn-panier" id="go-panier"><li class="panier"><span id="nbr-article-panier"></span> <span class="panier"><i class="fas fa-shopping-cart"></i></span>Panier</li></a>
 			</ul>
 		</nav>
 		<!-- Nav mobile and tablet-->
@@ -40,17 +43,16 @@
 					<a href="#"><li><i class="fas fa-home"></i></li></a>
 					<a href="#"><li>Boutique</li></a>
 					<a href="#concept"><li>A propos</li></a>
-					<li class="panier"><a href="#" class="btn-panier"><span class="panier"><i class="fas fa-shopping-cart"></i></span>Mon panier</a></li>
 				</ul>
 			</div>
 		</nav>
 		<!-- Header-->
-		<header class="header">
+		<header class="header" id="header-index">
 			<div class="header-content">
 				<h1 class="text-white">HEALTHY. TASTY. QUALITY.</h1>
 				<h3 class="text-white">Nous n'avons aucun secret pour vous.</h3>
 				<div>
-					<a href="#concept" class="btn btn-primary">Decouvrez-nous</a>
+					<a href="#concept" class="btn btn-primary">Découvrez-nous</a>
 				</div>
 			</div>
 			<!-- Message de fin animations-->
@@ -132,338 +134,507 @@
 		<!-- End how it's made-->
 	</header>
 	<!-- End header-->
-	<!-- Best sell-->
-	<section id="best-sell">
-		<div class="text-center">
-			<h2 class="title-50">Top des ventes</h2>
+	<header  id="header-panier">
+		<h1>Mon panier</h1>
+		<div class="row panier1">
+			<div class="column" style="flex:2;margin:10px">
+		<div class="row space-between">
+			<div class="article-title"><h3 class="text-choco">Article</h3></div>
+			<div class="quantites-title"><h3 class="text-choco">QTÉ</h3></div>
+			<div class="prices-title"><h3 class="text-choco">Prix</h3></div>
+			<div class="remove-title"><h3 class="text-choco">Supprimer</h3></div>
 		</div>
-		<div class="container row">
-			<!-- Product 1-->
-			<div class="product-details">
-				<div class="info-produit">
-					<a href="#" class="favoris-mobile"><span class="coeur-vide"><i class="far fa-heart"></i></span><span class="coeur-plein"><i class="fas fa-heart"></i></span></a>
-					<div class="review row">
-						<span class="stars">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
-						</span>
-						<span class="avis">
-							<a href="#">8 avis</a>
-						</span>
-					</div>
-				</div>
-				<div class="details-produit column">
-					<figure class="produit">
-						<img src="img/chocolate_seasalt_-p_p.jpg">
-					</figure>
-					<h3 class="title-20 text-choco">Chocolat Noir & Sel De Mer</h3>
-					<h4>2.79€</h4>
-					<div class="text-product text-center">
-						<p class="information">"
-						Tout ce dont tu as besoin c'est d'amour. Mais un peu de chocolat de temps en temps ne fait pas mal."</p>
-						<span class="citation">Charles M. Schulz</span>
-					</div>
-				</div>
-				<div class="call-to-action">
-					<a href="#" class="btn-buy"><span class="shopping-cart"><i class="fas fa-cart-plus"></i></span> Ajouter au panier</a>
-					<a href="#" class="btn-secondary">Plus d'info</a>
-				</div>
-			</div>
-			<!-- End product 1-->
-			<!-- Product 2-->
-			<div class="product-details">
-				<div class="info-produit">
-					<a href="#" class="favoris-mobile" ><span class="coeur-vide"><i class="far fa-heart"></i></span><span class="coeur-plein"><i class="fas fa-heart"></i></span></a>
-					<div class="review row">
-						<span class="stars">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="far fa-star"></i>
-						</span>
-						<span class="avis">
-							<a href="#">3 avis</a>
-						</span>
-					</div>
-				</div>
-				<div class="details-produit column">
-					<figure class="produit">
-						<img src="img/chocolate_chip_product_image.png">
-					</figure>
-					<h3 class="title-20 text-choco">Pépites De Chocolat</h3>
-					<h4>2.50€</h4>
-					<div class="text-product text-center">
-						<p class="information">"
-						Le chocolat est moins cher que la thérapie et vous ne devez pas prendre un rendez-vous."</p>
-						<span class="citation">Catherine Aitken</span>
-					</div>
-				</div>
-				<div class="call-to-action">
-					<a href="#"class="btn-buy"><span class="shopping-cart"><i class="fas fa-cart-plus"></i></span> Ajouter au panier</a>
-					<a href="#" class="btn-secondary">Plus d'info</a>
-				</div>
-			</div>
-			<!-- End product 2-->
-			<!-- Product 3-->
-			<div class="product-details">
-				<div class="info-produit">
-					<a href="#" class="favoris-mobile"><span class="coeur-vide"><i class="far fa-heart"></i></span><span class="coeur-plein"><i class="fas fa-heart"></i></span></a>
-					<div class="review row">
-						<span class="stars">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
-							<i class="far fa-star"></i>
-						</span>
-						<span class="avis">
-							<a href="#">1 avis</a>
-						</span>
-					</div>
-				</div>
-				<div class="details-produit column">
-					<figure class="produit">
-						<img src="img/mint_chocolate_-p_p.jpg">
-					</figure>
-					<h3 class="title-20 text-choco">Chocolat Mentholé</h3>
-					<h4>2.29€</h4>
-					<div class="text-product text-center">
-						<p class="information">
-						"L'argent ne fait pas le bonheur. Mais, il peut acheter un chocolat, qui est à peu près la même chose."</p>
-						<span class="citation "> Hanako Ishii</span>
-					</div>
-				</div>
-				<div class="call-to-action">
-					<a href="#" class="btn-buy"><span class="shopping-cart"><i class="fas fa-cart-plus"></i></span> Ajouter au panier</a>
-					<a href="#" class="btn-secondary">Plus d'info</a>
-				</div>
-			</div>
-			<!-- End product 3-->
-		</div>
-	</section>
-	<!-- Concept-->
-	<section id="concept">
-		<div class="text-center">
-			<h2 class="title-50">Le Concept NutriSect</h2>
-		</div>
-		<div class="container ">
-			<div class="row">
-				<!-- Text concept-->
-				<div class="right-section column content-center">
-					<div class="concept-content">
-						<h3 class="text-choco">Une meilleure alimentation pour vous et une plus belle planète pour vos enfants</h3>
-						<p>Les insectes comestibles contiennent des protéines de haute qualité, des vitamines et des acides aminés essentiels. Les grillons ont besoin de six fois moins de nourriture que les bovins pour produire la même quantité de protéines. En outre, ils émettent moins de gaz à effet de serre et d'ammoniac que l'élevage conventionnel. Les insectes peuvent être cultivés en utilisant des déchets organiques.</p>
-					</div>
-				</div>
-				<!-- End text concept-->
-				<!-- Img concept-->
-				<div class="right-section column">
-					<div class="concept-img align-center">
-						<img src="img/bg-concept.svg">
-					</div>
-				</div>
-				<!-- End img concept-->
-			</div>
-		</section>
-		<!-- Avantages-->
-		<section id="avantages">
-			<div class="text-center">
-				<h2 class="title-50">Chez NutriSect on s'engage à ..</h2>
-			</div>
-			<div class="container">
-				<div class="row">
-					<!-- Left 2 avantages-->
-					<div class="column">
-						<!-- Avantage 1-->
-						<div class="product-details row">
-							<!-- Img avantage 1-->
-							<div class="img-avantages">
-								<img src="img/grasshopper.svg" class="icon grasshopper2">
+				<h3 id="panier-vide">Votre panier est vide</h3>
+				<div id="article1" class="row space-between">
+					<div class="column content-center">
+						<div class="row article">
+							<figure class="produit">
+								<img src="img/SeaSaltBar.png">
+							</figure>
+							<div class="column content-center">
+								<h3 class="title-20">Chocolat Noir & Sel De Mer</h3>
 							</div>
-							<!-- End img avantage 1-->
-							<!-- Desc avantage 1-->
-							<div class="avantages-desc">
-								<h4 class="title-30">Diversifier</h4>
-								<p class="text-avantages">Votre alimentation avec de la poudre de grillon hyper riche en protéine.</p>
+						</div></div>
+						<div class="column content-center">
+							<div class="row quantites">
+								<button href="#" id="moin-article1">-</button>
+								<p id="nbr-article1" class="text-center"></p>
+								<button id="plus-article1">+</button>
 							</div>
-							<!-- End desc avantage 1-->
 						</div>
-						<!-- End avantage 1-->
-						<!-- Avantage 2-->
-						<div class="product-details row">
-							<!-- Img avantage 2-->
-							<div class="img-avantages">
-								<img src="img/internet.svg" class="icon earth">
+						<div class="column content-center">
+							<div class="row prices">
+								<p id="price-article1"></p>
 							</div>
-							<!-- End img avantage 2-->
-							<!-- Desc avantage 2-->
-							<div class="avantages-desc">
-								<h4 class="title-30">Préserver</h4>
-								<p class="text-avantages">Notre planète en réduisant les gaz à effet de serre et la consommation d'eau.</p>
-							</div>
-							<!-- End desc avantage 2-->
 						</div>
-						<!-- End avantage 2-->
-					</div>
-					<!-- End left 2 avantages-->
-					<!-- Right 2 avantages-->
-					<div class="column">
-						<!-- Avantage 3-->
-						<div class="product-details row">
-							<!-- Img avantage 3-->
-							<div class="img-avantages" >
-								<img src="img/tongue.svg" class="icon tongue">
+						<div class="column content-center">
+							<div class="row remove">
+								<button id="delete-article1"><h4 class="text-choco">X</h4></button>
 							</div>
-							<!-- End img avantage 3-->
-							<!-- Desc avantage 3-->
-							<div class="avantages-desc">
-								<h4 class="title-30">Éveiller</h4>
-								<p class="text-avantages">Vos papilles avec des produits frais et sélectionnez pour leurs qualités gustatives et nutritives.</p>
-							</div>
-							<!-- End desc avantage 3-->
 						</div>
-						<!-- End avantage 3-->
-						<!-- Avantage 4-->
-						<div class="product-details row">
-							<!-- Img avantage 4-->
-							<div class="img-avantages">
-								<img src="img/heart.svg" class="icon heart">
-							</div>
-							<!-- End img avantage 4-->
-							<div class="avantages-desc">
-								<h4 class="title-30">Améliorer</h4>
-								<p class="text-avantages">Votre santé avec des barres contenant tout l'apport nutritionnel nécessaire au bon fonctionnement de votre corps.</p>
-							</div>
-							<!-- End desc avantage 4-->
-						</div>
-						<!-- End avantage 4-->
 					</div>
-					<!-- End Right 2 avantages-->
-				</div>
-			</div>
-		</section>
-		<!-- End avantages-->
-		<!-- Social network-->
-		<section id="social-network">
-			<div class="container-social row">
-				<!-- 6 img left-->
-				<div class="column">
-					<div class="row">
-						<div class="litle-img img1"></div>
-						<div class="litle-img img2"></div>
-						<div class="litle-img img3"></div>
-					</div>
-					<div class="row">
-						<div class="litle-img img4"></div>
-						<div class="litle-img img5"></div>
-						<div class="litle-img img6"></div>
-					</div>
-					<div class="row">
-						<div class="litle-img img7"></div>
-						<div class="litle-img img8"></div>
-						<div class="litle-img img9"></div>
-					</div>
-				</div>
-				<!-- End 6 img left-->
-				<!-- Big img-->
-				<div class="big-img"></div>
-				<!-- End big img-->
-				<!-- 6 img right-->
-				<div class="column">
-					<div class="row">
-						<div class="litle-img img10"></div>
-						<div class="litle-img img11">
-						</div>
-						<div class="litle-img img12"></div>
-					</div>
-					<div class="row">
-						<div class="litle-img img13"></div>
-						<div class="litle-img img14"></div>
-						<div class="litle-img img15"></div>
-					</div>
-					<div class="row">
-						<div class="litle-img img16"></div>
-						<div class="litle-img img17"></div>
-						<div class="litle-img img18"></div>
-					</div>
-				</div>
-				<!-- End 6 img right-->
-			</div>
-		</section>
-		<!-- Footer-->
-		<footer id="footer">
-			<div class="container">
-				<div class="column space-between">
-					<!-- Contact-->
-					<article id="contact">
-						<div class="row footer-top">
-							<div class="row">
-								<!-- Form-->
-								<div class="contact column">
-									<h3 class="text-choco title-30">Contactez-nous</h3>
-									<p class="title-20">Vous avez des questions ? N'hésitez pas à nous contacter directement</p>
-									<form method="post" action="#">
-										<div class="column">
-											<div class="row label-area">
-												<label for="name">Nom
-													<input type="text" name="name" id="name" placeholder="Jean"></label>
-													<label for="email">Email
-														<input type="text" name="email" id="email" placeholder="Jean@gmail.com"></label>
-													</div>
-													<textarea type="text" id="message" name="message" rows="6" placeholder="Entrez votre message.."></textarea>
-												</div>
-												<div class="row send align-center">
-													<input type="submit" name="submit" id="submit" value="Envoyer" class="btn-buy"/>
-												</div>
-											</div>
-										</form>
+					<div id="article2" class="column space-between">
+						<div class="row space-between">
+							<div class="column">
+								<div class="row article">
+									<figure class="produit">
+										<img src="img/chocolate_chip_product_image.png">
+									</figure>
+									<div class="column content-center">
+										<h3 class="title-20">Pépite De Chocolat</h3>
 									</div>
-									<!-- End form-->
+								</div></div>
+								<div class="column content-center">
+									<div class="row quantites">
+										<button href="#" id="moin-article2">-</button>
+										<p id="nbr-article2" class="text-center"></p>
+										<button id="plus-article2">+</button>
+									</div>
+								</div>
+								<div class="column content-center">
+									<div class="row prices">
+										<p id="price-article2"></p>
+									</div>
+								</div>
+								<div class="column content-center">
+									<div class="row remove">
+										<button id="delete-article2"><h4 class="text-choco">X</h4></button>
+									</div>
 								</div>
 							</div>
-						</article>
-						<!-- End contact-->
-						<!-- Footer-content-->
-						<article>
-							<div class="row footer-bottom">
-								<!-- logo & SEO-->
-								<div class="logo-footer column">
-									<a href="#"><img src="img/logo.svg"></a>
-									<span class="text-choco">Des barres protéinés saines, de qualités et respectueuses de l'environnement.</span>
+						</div>
+						<div id="article3" class="column space-between">
+							<div class="row space-between">
+								<div class="column content-center">
+									<div class="row article">
+										<figure class="produit">
+											<img src="img/mint_chocolate_-p_p.jpg">
+										</figure>
+										<div class="column content-center">
+											<h3 class="title-20">Chocolat Mentholé</h3>
+										</div>
+									</div></div>
+									<div class="column content-center">
+										<div class="row quantites">
+											<button href="#" id="moin-article3">-</button>
+											<p id="nbr-article3" class="text-center"></p>
+											<button id="plus-article3">+</button>
+										</div>
+									</div>
+									<div class="column content-center">
+										<div class="row prices">
+											<p id="price-article3"></p>
+										</div>
+									</div>
+									<div class="column content-center">
+										<div class="row remove">
+											<button id="delete-article3"><h4 class="text-choco">X</h4></button>
+										</div>
+									</div>
 								</div>
-								<!-- End logo & SEO-->
-								<ul>EN SAVOIR PLUS
-									<li><a href="#">Notre équipe</a></li>
-									<li><a href="#">FAQ</a></li>
-									<li><a href="#">Ambassadeurs</a></li>
-								</ul>
-								<ul>INFORMATIONS
-									<li><a href="#">Livraison</a></li>
-									<li><a href="#">Paiement</a></li>
-									<li><a href="#">Mentions légales</a></li>
-									<li><a href="#">Où nous trouver ?</a></li>
-								</ul>
-								<!-- Social media-->
-								<ul class="social-media">
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a><li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-									<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-								</ul>
-								<!-- End social media-->
-							</div>
-						</article>
-						<!-- End footer content-->
+							</div></div>
+<div class="row" id="info-buy">
+							<div class="column space-between" style="margin-left:auto;margin-right:auto; padding: 0px 0px 20px 0px;">
+								<div class="column">
+									<div>
+										<h4 style="padding: 5px;">Moyen de livraison :</h4>
+									</div>
+									<div class="column content-center">
+										<select name="delivery" id="delivery">
+											<option value="relay" selected>Livraison Mondial Relay (72h) gratuit</option>
+											<option value="colissimo">Livraison colissimo(48h) 7,99€</option>
+											<option value="ups">Livraison UPS(24h) 9,99€</option>
+										</select>
+									</div>
+								</div>
+								<div class="row space-between" >
+									<div>
+										<h4 style="padding: 5px;">Livraison :</h4>
+								</div>
+									<div class="column content-center">
+											<h4 id="delivery-price"></h4>
+									</div>
+								</div>
+								<div class="row space-between">
+									<div>
+									<h5 style="padding: 5px;" class="text-choco">TVA (19,60%):</h5>
+								</div>
+									<div class="column content-center">
+										<h5 id="tva" class="text-choco"></h5>
+									</div>
+								</div>
+								<div class="row space-between" id="before-reduc">
+									<div>
+										<h4 style="padding: 5px;">Avant reduction :</h4>
+								</div>
+									<div class="column content-center">
+											<h4 id="price-before"></h4>
+									</div>
+								</div>
+								<div class="row space-between" >
+									<div>
+										<h4 style="padding: 5px;">Sous-Total :</h4>
+								</div>
+									<div class="column content-center">
+											<h4 id="total-price"></h4>
+									</div>
+								</div>
+								<div class="row space-between" id="reduction" >
+									<div>
+										<h6 style="padding: 5px; color: green;" id="msg-reduction"></h6>
+								</div>
+									<div class="column content-center">
+											<h5 id="promo-reduc"></h5>
+									</div>
+									<div class="delete">
+										<button id="delete-promo-code"><h4 class="text-choco">X</h4></button>									
+									</div>
+								</div>
+									<div class="row content-center" id="code-promo-area">
+											<input type="text" id="promo-code" placeholder="Utiliser le code"></input>		
+											<button id="promo-test">Utiliser votre code</button>
+									</div>
+									</div>
+								</div>
 					</div>
-				</div>
-			</footer>
-			<!-- End footer-->
-			<!-- top-->
-			<div class="top"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
-			<!-- End top-->
-    </body>
-</html>
+					<div class="align-center"> 
+								<a class="btn-buy" id="btn-payed"><span class="shopping-cart"><i class="fas fa-credit-card"></i> Procéder au paiement</span></a>
+								<a href="#" class="btn-secondary" id="go-back">Poursuivre les achats</a>
+					</div>
+				</header>
+				<!-- Best sell-->
+				<section id="best-sell">
+					<div class="text-center">
+						<h2 class="title-50">Top des ventes</h2>
+					</div>
+					<div class="container row">
+						<!-- Product 1-->
+						<div class="product-details">
+							<div class="info-produit">
+								<a href="#" class="favoris-mobile"><span class="coeur-vide"><i class="far fa-heart"></i></span><span class="coeur-plein"><i class="fas fa-heart"></i></span></a>
+								<div class="review row">
+									<span class="stars">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+									</span>
+									<span class="avis">
+										<a href="#">8 avis</a>
+									</span>
+								</div>
+							</div>
+							<div class="details-produit column">
+								<figure class="produit">
+									<img src="img/chocolate_seasalt_-p_p.jpg">
+								</figure>
+								<h3 class="title-20 text-choco">Chocolat Noir & Sel De Mer</h3>
+								<h4>2.79€</h4>
+								<div class="text-product text-center">
+									<p class="information">"
+									Tout ce dont tu as besoin c'est d'amour. Mais un peu de chocolat de temps en temps ne fait pas mal."</p>
+									<span class="citation">Charles M. Schulz</span>
+								</div>
+							</div>
+							<div class="call-to-action">
+								<a class="btn-buy" id="ajouter-article1"><span class="shopping-cart"><i class="fas fa-cart-plus"></i></span> Ajouter au panier</a>
+								<a href="#" class="btn-secondary">Plus d'info</a>
+							</div>
+						</div>
+						<!-- End product 1-->
+						<!-- Product 2-->
+						<div class="product-details">
+							<div class="info-produit">
+								<a href="#" class="favoris-mobile" ><span class="coeur-vide"><i class="far fa-heart"></i></span><span class="coeur-plein"><i class="fas fa-heart"></i></span></a>
+								<div class="review row">
+									<span class="stars">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="far fa-star"></i>
+									</span>
+									<span class="avis">
+										<a href="#">3 avis</a>
+									</span>
+								</div>
+							</div>
+							<div class="details-produit column">
+								<figure class="produit">
+									<img src="img/chocolate_chip_product_image.png">
+								</figure>
+								<h3 class="title-20 text-choco">Pépites De Chocolat</h3>
+								<h4>2.50€</h4>
+								<div class="text-product text-center">
+									<p class="information">"
+									Le chocolat est moins cher que la thérapie et vous ne devez pas prendre un rendez-vous."</p>
+									<span class="citation">Catherine Aitken</span>
+								</div>
+							</div>
+							<div class="call-to-action">
+								<a class="btn-buy" id="ajouter-article2"><span class="shopping-cart"><i class="fas fa-cart-plus"></i></span> Ajouter au panier</a>
+								<a href="#" class="btn-secondary">Plus d'info</a>
+							</div>
+						</div>
+						<!-- End product 2-->
+						<!-- Product 3-->
+						<div class="product-details">
+							<div class="info-produit">
+								<a href="#" class="favoris-mobile"><span class="coeur-vide"><i class="far fa-heart"></i></span><span class="coeur-plein"><i class="fas fa-heart"></i></span></a>
+								<div class="review row">
+									<span class="stars">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<i class="far fa-star"></i>
+									</span>
+									<span class="avis">
+										<a href="#">1 avis</a>
+									</span>
+								</div>
+							</div>
+							<div class="details-produit column">
+								<figure class="produit">
+									<img src="img/mint_chocolate_-p_p.jpg">
+								</figure>
+								<h3 class="title-20 text-choco">Chocolat Mentholé</h3>
+								<h4>2.29€</h4>
+								<div class="text-product text-center">
+									<p class="information">
+									"L'argent ne fait pas le bonheur. Mais, il peut acheter un chocolat, qui est à peu près la même chose."</p>
+									<span class="citation "> Hanako Ishii</span>
+								</div>
+							</div>
+							<div class="call-to-action">
+								<a class="btn-buy" id="ajouter-article3"><span class="shopping-cart"><i class="fas fa-cart-plus"></i></span> Ajouter au panier</a>
+								<a href="#" class="btn-secondary">Plus d'info</a>
+							</div>
+						</div>
+						<!-- End product 3-->
+					</div>
+				</section>
+				<!-- Concept-->
+				<section id="concept">
+					<div class="text-center">
+						<h2 class="title-50">Le Concept NutriSect</h2>
+					</div>
+					<div class="container ">
+						<div class="row">
+							<!-- Text concept-->
+							<div class="right-section column content-center">
+								<div class="concept-content">
+									<h3 class="text-choco">Une meilleure alimentation pour vous et une plus belle planète pour vos enfants</h3>
+									<p>Les insectes comestibles contiennent des protéines de haute qualité, des vitamines et des acides aminés essentiels. Les grillons ont besoin de six fois moins de nourriture que les bovins pour produire la même quantité de protéines. En outre, ils émettent moins de gaz à effet de serre et d'ammoniac que l'élevage conventionnel. Les insectes peuvent être cultivés en utilisant des déchets organiques.</p>
+								</div>
+							</div>
+							<!-- End text concept-->
+							<!-- Img concept-->
+							<div class="right-section column">
+								<div class="concept-img align-center">
+									<img src="img/bg-concept.svg">
+								</div>
+							</div>
+							<!-- End img concept-->
+						</div>
+					</section>
+					<!-- Avantages-->
+					<section id="avantages">
+						<div class="text-center">
+							<h2 class="title-50">Chez NutriSect on s'engage à ..</h2>
+						</div>
+						<div class="container">
+							<div class="row">
+								<!-- Left 2 avantages-->
+								<div class="column">
+									<!-- Avantage 1-->
+									<div class="product-details row">
+										<!-- Img avantage 1-->
+										<div class="img-avantages">
+											<img src="img/grasshopper.svg" class="icon grasshopper2">
+										</div>
+										<!-- End img avantage 1-->
+										<!-- Desc avantage 1-->
+										<div class="avantages-desc">
+											<h4 class="title-30">Diversifier</h4>
+											<p class="text-avantages">Votre alimentation avec de la poudre de grillon hyper riche en protéine.</p>
+										</div>
+										<!-- End desc avantage 1-->
+									</div>
+									<!-- End avantage 1-->
+									<!-- Avantage 2-->
+									<div class="product-details row">
+										<!-- Img avantage 2-->
+										<div class="img-avantages">
+											<img src="img/internet.svg" class="icon earth">
+										</div>
+										<!-- End img avantage 2-->
+										<!-- Desc avantage 2-->
+										<div class="avantages-desc">
+											<h4 class="title-30">Préserver</h4>
+											<p class="text-avantages">Notre planète en réduisant les gaz à effet de serre et la consommation d'eau.</p>
+										</div>
+										<!-- End desc avantage 2-->
+									</div>
+									<!-- End avantage 2-->
+								</div>
+								<!-- End left 2 avantages-->
+								<!-- Right 2 avantages-->
+								<div class="column">
+									<!-- Avantage 3-->
+									<div class="product-details row">
+										<!-- Img avantage 3-->
+										<div class="img-avantages" >
+											<img src="img/tongue.svg" class="icon tongue">
+										</div>
+										<!-- End img avantage 3-->
+										<!-- Desc avantage 3-->
+										<div class="avantages-desc">
+											<h4 class="title-30">Éveiller</h4>
+											<p class="text-avantages">Vos papilles avec des produits frais et sélectionnez pour leurs qualités gustatives et nutritives.</p>
+										</div>
+										<!-- End desc avantage 3-->
+									</div>
+									<!-- End avantage 3-->
+									<!-- Avantage 4-->
+									<div class="product-details row">
+										<!-- Img avantage 4-->
+										<div class="img-avantages">
+											<img src="img/heart.svg" class="icon heart">
+										</div>
+										<!-- End img avantage 4-->
+										<div class="avantages-desc">
+											<h4 class="title-30">Améliorer</h4>
+											<p class="text-avantages">Votre santé avec des barres contenant tout l'apport nutritionnel nécessaire au bon fonctionnement de votre corps.</p>
+										</div>
+										<!-- End desc avantage 4-->
+									</div>
+									<!-- End avantage 4-->
+								</div>
+								<!-- End Right 2 avantages-->
+							</div>
+						</div>
+					</section>
+					<!-- End avantages-->
+					<!-- Social network-->
+					<section id="social-network">
+						<div class="container-social row">
+							<!-- 6 img left-->
+							<div class="column">
+								<div class="row">
+									<div class="litle-img img1"></div>
+									<div class="litle-img img2"></div>
+									<div class="litle-img img3"></div>
+								</div>
+								<div class="row">
+									<div class="litle-img img4"></div>
+									<div class="litle-img img5"></div>
+									<div class="litle-img img6"></div>
+								</div>
+								<div class="row">
+									<div class="litle-img img7"></div>
+									<div class="litle-img img8"></div>
+									<div class="litle-img img9"></div>
+								</div>
+							</div>
+							<!-- End 6 img left-->
+							<!-- Big img-->
+							<div class="big-img"></div>
+							<!-- End big img-->
+							<!-- 6 img right-->
+							<div class="column">
+								<div class="row">
+									<div class="litle-img img10"></div>
+									<div class="litle-img img11">
+									</div>
+									<div class="litle-img img12"></div>
+								</div>
+								<div class="row">
+									<div class="litle-img img13"></div>
+									<div class="litle-img img14"></div>
+									<div class="litle-img img15"></div>
+								</div>
+								<div class="row">
+									<div class="litle-img img16"></div>
+									<div class="litle-img img17"></div>
+									<div class="litle-img img18"></div>
+								</div>
+							</div>
+							<!-- End 6 img right-->
+						</div>
+					</section>
+					<!-- Footer-->
+					<footer id="footer">
+						<div class="container">
+							<div class="column space-between">
+								<!-- Contact-->
+								<article id="contact">
+									<div class="row footer-top">
+										<div class="row">
+											<!-- Form-->
+											<div class="contact column">
+												<h3 class="text-choco title-30">Contactez-nous</h3>
+												<p class="title-20">Vous avez des questions ? N'hésitez pas à nous contacter directement</p>
+												<form method="post" action="#">
+													<div class="column">
+														<div class="row label-area">
+															<label for="name">Nom
+																<input type="text" name="name" id="name" placeholder="Jean"></label>
+																<label for="email">Email
+																	<input type="text" name="email" id="email" placeholder="Jean@gmail.com"></label>
+																</div>
+																<textarea type="text" id="message" name="message" rows="6" placeholder="Entrez votre message.."></textarea>
+															</div>
+															<div class="row send align-center">
+																<input type="submit" name="submit" id="submit" value="Envoyer" class="btn-buy"/>
+															</div>
+														</div>
+													</form>
+												</div>
+												<!-- End form-->
+											</div>
+										</div>
+									</article>
+									<!-- End contact-->
+									<!-- Footer-content-->
+									<article>
+										<div class="row footer-bottom">
+											<!-- logo & SEO-->
+											<div class="logo-footer column">
+												<a href="#"><img src="img/logo.svg"></a>
+												<span class="text-choco">Des barres protéinées saines, de qualités et respectueuses de l'environnement.</span>
+											</div>
+											<!-- End logo & SEO-->
+											<ul>EN SAVOIR PLUS
+												<li><a href="#">Notre équipe</a></li>
+												<li><a href="#">FAQ</a></li>
+												<li><a href="#">Ambassadeurs</a></li>
+											</ul>
+											<ul>INFORMATIONS
+												<li><a href="#">Livraison</a></li>
+												<li><a href="#">Paiement</a></li>
+												<li><a href="#">Mentions légales</a></li>
+												<li><a href="#">Où nous trouver ?</a></li>
+											</ul>
+											<!-- Social media-->
+											<ul class="social-media">
+												<li><a href="#"><i class="fab fa-facebook-f"></i></a><li>
+												<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+												<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+											</ul>
+											<!-- End social media-->
+										</div>
+									</article>
+									<!-- End footer content-->
+								</div>
+							</div>
+						</footer>
+						<!-- End footer-->
+						<!-- top-->
+						<div class="top"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
+						<!-- End top-->
+					</body>
+					<script type="text/javascript" src="js/script.js"></script>
+				</html>
