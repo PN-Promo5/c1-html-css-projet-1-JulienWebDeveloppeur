@@ -91,17 +91,17 @@ padding: 20px;
 width: 100%;
 }
 .row {
-  display: flex;
+  display: -webkit-flex;
 }
 .column {
-  display: flex;
-  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
 }
 .space-between {
-  justify-content: space-between;
+ -webkit-justify-content: space-between;
 }
 .content-center {
-  justify-content: center;
+  -webkit-justify-content: center;
 }
 .text-white {
   color: white !important;
@@ -755,11 +755,9 @@ width: 200px
 }
 .panier1 {
   margin-bottom: 20px;
-  height: 100%;
 }
 #info-buy {
 box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.33);
-flex:1; 
 margin-top: 20px;
 }
 .article-title {
